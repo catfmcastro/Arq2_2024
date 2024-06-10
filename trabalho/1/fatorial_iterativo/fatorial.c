@@ -1,16 +1,18 @@
 #include <stdio.h>
+#include <stdint.h>
+#include <inttypes.h>
 
 int main () {
-    int n;
+    uint64_t n;
     printf("Digite um número: ");
-    scanf("%d", &n);
+    scanf("%" SCNu64, &n);
 
     // fatorial iterativo
-    int fatorial = 1;
+    uint64_t fatorial = 1;
     for (int i = 1; i <= n; i++) {
         fatorial *= i;
     }
 
-    printf("Fatorial de %d: %d\n", n, fatorial(n));
+    printf("Fatorial de %" PRIu64 ": %" PRIu64 "\n", n, fatorial);
     return 0;
 }

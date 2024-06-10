@@ -1,7 +1,9 @@
 #include <stdio.h>
+#include <stdint.h>
+#include <inttypes.h>
 
 // fatorial recursivo
-int fatorial(int n) {
+uint64_t fatorial(uint64_t n) {
     if (n == 0) {
         return 1;
     } else {
@@ -10,9 +12,9 @@ int fatorial(int n) {
 }
 
 int main () {
-    int n;
+    uint64_t n;
     printf("Digite um número: ");
-    scanf("%d", &n);
-    printf("Fatorial de %d: %d\n", n, fatorial(n));
+    scanf("%" SCNu64, &n);
+    printf("Fatorial de %" PRIu64 ": %" PRIu64 "\n", n, fatorial(n));
     return 0;
 }
