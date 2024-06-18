@@ -18,3 +18,22 @@ int main () {
     printf("Fatorial de %" PRIu64 ": %" PRIu64 "\n", n, fatorial(n));
     return 0;
 }
+
+// #include <stdio.h>
+
+// // fatorial recursivo
+// unsigned long long fatorial(unsigned long long n) {
+//     if (n == 0) {
+//         return 1;
+//     } else {
+//         return n * fatorial(n - 1);
+//     }
+// }
+
+// int main () {
+//     unsigned long long n;
+//     printf("Digite um número: ");
+//     scanf("%llu", &n);
+//     printf("Fatorial de %llu: %llu\n", n, fatorial(n));
+//     return 0;
+// }
